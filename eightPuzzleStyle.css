@@ -1,0 +1,62 @@
+body {
+    background-color: #cddcec;
+    font-family: "Anton SC", sans-serif;
+}
+
+table {
+    border:10px;
+    border-style:solid;
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+caption {
+    font-family: "Anton SC", sans-serif;
+}
+
+td {
+    font-weight: bold;
+    font-family: helvetica, sans-serif;
+}
+
+caption {
+    font-size: 3em;
+    color: #556679;
+}
+
+td {
+    font-size: 4em;
+    color: #7c95b1;
+    border: 2px solid gray;
+    padding: 5px;
+}
+
+div {
+    font-size: 2em;
+    color: #556679;
+}
+
+button {
+    background-color: white; 
+    margin: 4px 25px;
+
+    border: 3px;
+    border-style:solid;
+    border-color: #7c95b1;
+    border-radius: 10px;
+    
+    font-family: "Anton SC", sans-serif;
+    font-size: 30px;
+    color: #556679;
+
+    padding: 7px 5px;
+    text-align: center;
+    display: inline-block;
+    
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #7c95b1;
+    color: white;
+}

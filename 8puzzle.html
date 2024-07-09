@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    
+    <meta charset="utf-8" />
+
+    <title>8-Puzzle</title>
+    <link rel="stylesheet" href="eightPuzzleStyle.css" />
+    <script src="eightPuzzleJS.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
+</head>
+
+<body onload="setup()">
+    
+    <audio id="music" preload="auto">
+        <source src="Electro-Light - Symbolism [NCS Release].mp3" type="audio/mpeg">
+    </audio>
+    <audio id="applause" preload="auto">
+        <source src="applause.mp3" type="audio/mpeg">
+    </audio>
+    <div style="text-align:center">
+        <table id="board">
+            <caption>8-Puzzle</caption>
+            <tbody>
+                <tr>
+                    <td onmouseover = "show(0,0)" onmouseout = "blank()" onclick="doClick( 0, 0 ),checkwin()" id="cell00"> </td>
+                    <td onmouseover = "show(0,1)" onmouseout = "blank()" onclick="doClick( 0, 1 ),checkwin()" id="cell01">08</td>
+                    <td onmouseover = "show(0,2)" onmouseout = "blank()" onclick="doClick( 0, 2 ),checkwin()" id="cell02">07</td>
+                </tr>
+                <tr>
+                    <td onmouseover = "show(1,0)" onmouseout = "blank()" onclick="doClick( 1, 0 ),checkwin()" id="cell10">06</td>
+                    <td onmouseover = "show(1,1)" onmouseout = "blank()" onclick="doClick( 1, 1 ),checkwin()" id="cell11">05</td>
+                    <td onmouseover = "show(1,2)" onmouseout = "blank()" onclick="doClick( 1, 2 ),checkwin()" id="cell12">04</td>
+                </tr>
+                <tr>
+                    <td onmouseover = "show(2,0)" onmouseout = "blank()" onclick="doClick( 2, 0 ),checkwin()" id="cell20">03</td>
+                    <td onmouseover = "show(2,1)" onmouseout = "blank()" onclick="doClick( 2, 1 ),checkwin()" id="cell21">02</td>
+                    <td onmouseover = "show(2,2)" onmouseout = "blank()" onclick="doClick( 2, 2 ),checkwin()" id="cell22">01</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            <button onclick="location.reload()" id="restartBtn">Restart Game</button>
+            <button onclick="switchBGM()" id="musicBtn">Play music</button>
+            <!-- 測試拍手音效 -->
+            <!-- <button onclick="gotoLastStep()" id="laststepBtn">Go to the Last Step</button> -->
+        </p>
+        <div id="msg"></div>
+    </div>
+</body>
+
+</html>
